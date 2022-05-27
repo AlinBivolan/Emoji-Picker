@@ -4,7 +4,6 @@ function Display() {
   return (
     <div>
         <div className={classes.container}>
-
         </div>
     </div>
   );

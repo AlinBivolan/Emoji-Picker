@@ -1,5 +1,5 @@
+@import '../theme/colors.css';
 .backdrop {
-    background-color: rgba(0, 0, 0, 0.584);
   top: 0;
   width: 100%;
   height: 100%;
@@ -8,10 +8,19 @@
 
 .container {
   border-radius: 7px;
-    position: absolute;
-    margin-left: 10vw;
-    background-color: white;
-    top: 220px;
-    width: 440px;
-    height: 480px;
+  position: absolute;
+  margin-left: 10vw;
+  background-color: var(--whitePure);
+  top: 220px;
+  width: 440px;
+  height: 480px;
+}
+.categories {
+  border-radius: 7px;
+  position: absolute;
+  margin-left: 10vw;
+  background-color: var(--whitePure);
+  top: 220px;
+  width: 440px;
+  height: 480px;
 }

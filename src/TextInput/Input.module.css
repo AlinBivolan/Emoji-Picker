@@ -1,3 +1,4 @@
+@import '../theme/colors.css';
 .icon {
   cursor: pointer;
   position: absolute;
@@ -13,7 +14,7 @@
 }
 
 .display {
-  background-color: rgb(180, 180, 180);
+  background-color: var(--backgroundLightGray);
   display: block;
   margin: auto;
   margin-top: 3vh;
@@ -23,18 +24,18 @@
   border-radius: 15px 15px 15px 15px;
   resize: none;
   border: none;
-  color: white;
+  color: var(--whitePure);
   text-indent: 20px;
   font-size: 20px;
   line-height: 50px;
-    white-space: nowrap;
+  white-space: nowrap;
 }
 .display:focus {
     outline: none;
 }
 .display::placeholder {
   font-family: "Poppins", sans-serif;
-  color: White;
+  color: var(--whitePure);
   font-weight: 800;
   font-size: 20px;
 }
@@ -45,11 +46,11 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 100px rgb(180, 180, 180);
+  box-shadow: inset 0 0 100px var(--backgroundLightGray);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: white;
+  background: var(--whitePure);
   border-radius: 0px;
 }

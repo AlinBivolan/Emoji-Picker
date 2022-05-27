@@ -2,21 +2,23 @@ import React, { Fragment } from "react";
 
 import classes from "./Modal.module.css";
 
-const Backdrop = props => {
-  return <div className={classes.backdrop} onClick={props.onConfirm}></div>
+const Backdrop = ({onConfirm}) => {
+  return <div className={classes.backdrop} onClick={onConfirm}></div>
 };
 
-const ModalOverlay = props => {
-  return <div className={classes.modal}>
-    <div className={classes.content}>{props.children}</div>
-  </div>
+const ModalOverlay = ({ children }) => {
+  return (
+    <div className={classes.modal}>
+      <div className={classes.content}>{children}</div>
+    </div>
+  );
 };
 
-const Modal = (props) => {
+const Modal = ({onConfirm, children}) => {
   return (
     <Fragment className={classes.backdrop}>
-      <Backdrop className={classes.backdrop} onConfirm={props.onConfirm} />
-      <ModalOverlay className={classes.backdrop}>{props.children}</ModalOverlay>
+      <Backdrop className={classes.backdrop} onConfirm={onConfirm} />
+      <ModalOverlay className={classes.backdrop}>{children}</ModalOverlay>
     </Fragment>
   );
 };
